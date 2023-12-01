@@ -12,8 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- this text will appear in the browser tab -->
         <title>Da Goated WebPage</title>
-        <script src="event.js"> </script>
-        <link rel="stylesheet" href="main.css">
+
 
     </head>
     <!-- all of the page content will go here -->
@@ -27,30 +26,46 @@
         <!-- This is our navigation section-->
         <nav>
             <!-- link to home page-->
-            <a href="index.html"> Home</a>
+            <!-- the .. will take you "up" a directory to where this file is located -->
+            <a href="index.html"> Home</a> 
             <br>
             <!-- link to boards page-->
-            <a href="boards.html"> Boards</a>
+            <!-- the .. will take you "up" a directory to where this file is located -->
+            <a href="boards.html"> Boards</a> 
             <br>
             <!-- link to game page-->
-            <a href="game.html"> Game Page</a>
+            <!--this link can just point to the current file name without the directory-->
+            <a href="game.html"> Game Page</a>  
             <br>
             <a href="strings.html"> Strings Page</a>
-            <br>
         </nav>
 
 
         
         <!-- paragraph tag will hold the meme -->
-            <p id="memeImage">
-                <center> 
-                    <!-- Shows the meme image -->
-                    <img id="homepageMeme" src="elgato.jpeg" alt="Message with cat holding up peace sign and being sassy">
-                </center>
+        <p>
+            Welcome to my Strings Page!
         </p>
-       
-        <!-- <input type="button" value="New Element Demo" onclick="addButton();"> -->
-        <input type="button" value="Add Start and Stop Buttons" onclick="addButtons();">
+        <form id="myForm">
+            <!-- name of the first textbox-->
+            <label for="fName"> First Name: </label>
+            <!-- The type of input that will be going into the textbox-->
+            <input type="text" name="fName" id="fName">
+            <br>
+            <br>
+            <label for="lName"> Last Name: </label>
+            <input type="text" name="lName" id="lName">
+            <br>
+            <br>
+            <label for="zip"> Zip Code: </label>
+            <input type="text" name="zip" id="zip">
+            <br>
+            <br>
+            <button> Submit </button>
+            <br>
+            <br>
+
+        </form>
         
         <!-- the footer section; this should show up at the bottom of the page-->
         <footer>

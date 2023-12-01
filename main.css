@@ -1,0 +1,50 @@
+/* this is the body selector - these styles will affect the whole page 
+    setting the background-color property to the value of grey
+    setting the text color (foreground) property to black  */
+body{
+    background-color: rgb(165, 161, 161);
+    color:black; 
+}
+
+
+/* this is the nav selector, anything in between the <nav> and </nav> tages will be 
+    affected by these styles */
+
+nav{
+
+    height: 600px; /* you can also try 400 */
+    width: 200px;
+    float: left; 
+    padding: 5px;
+    line-height: 30px;
+    }
+
+/* this is the footer selector - generally the footer will be at the bottom of the page */
+
+footer{
+    text-align: center;
+    margin-right: 200px;
+}
+
+/* the image with an id(#) of homepageMeme will be affected by this style */
+#homepageMeme{
+    margin-right: 200px;
+    animation-duration: 0s;
+    animation-name: moving;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* anything in between the header tags will be affected by this style */
+header{
+    text-align: center; 
+}
+
+@keyframes moving {
+    from {
+        margin-right: 1ch;
+    }
+    to {
+        margin-right: 300px;
+    }
+}
