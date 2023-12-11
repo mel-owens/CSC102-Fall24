@@ -63,3 +63,19 @@ function stopButton() {
     let memeImage = document.getElementById("homepageMeme");
     memeImage.style.animationDuration = "0s"; 
 }
+
+var clicked = false;
+
+window.addEventListener("click", (event) => {
+    if(!clicked){
+        let audioSource = ["HelloKitty.mp3"];
+
+        let audioElement = document.getElementById("backgroundAudio");
+
+        audioElement.src = audioSource;
+        audioElement.loop = true;
+        audioElement.play();
+
+        clicked = true;
+    }
+});
