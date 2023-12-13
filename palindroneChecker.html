@@ -2,27 +2,25 @@
 <!-- Sept.14.2023-->
 <!-- tells the browser that you'll be using HTML5 -->
 <!DOCTYPE html>
-<!-- HTML tag is required, set the language to english (en) -->
+<!-- HTML tag is required, set the language to English (en) -->
 <html lang="en">
     <!-- head section is for the browser and search engines usually -->
     <head>
-        <!-- used so that the page can suppot all characters in any language -->
-        <meta charset=""UTF-8">
+        <!-- used so that the page can support all characters in any language -->
+        <meta charset="UTF-8">
         <!-- tag used so that the website can look good both on mobile and desktop -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- this text will appear in the browser tab -->
-        <title>Da Goated WebPage</title>
-        <link rel="stylesheet" href="strings.css">
-
+        <title>Palindrome Checker</title>
+        <link rel="stylesheet" href="checker.css">
 
     </head>
     <!-- all of the page content will go here -->
     <body>
         <!-- adding the page heading/page heading. only 1 h1 per page-->
         <header>
-            <h1> Welcome to my Strings Page! </h1>
+            <h1> RaceCars! </h1>
         </header>
-        
 
         <!-- This is our navigation section-->
         <nav>
@@ -48,40 +46,22 @@
             <br>
         </nav>
 
+        <input type="text" id="wordInput" placeholder="Enter a word">
+        <button onclick="checkPalindrome()">Check Palindrome</button>
+        <p id="result"></p>
 
-        
-        <form id="myForm">
-            <!-- name of the first textbox-->
-            <label for="fName"> First Name: </label>
-            <!-- The type of input that will be going into the textbox-->
-            <input type="text" name="fName" id="fName">
-            <br>
-            <br>
-            <label for="lName"> Last Name: </label>
-            <input type="text" name="lName" id="lName">
-            <br>
-            <br>
-            <label for="zip"> Zip Code: </label>
-            <input type="text" name="zip" id="zip">
-            <br>
-            <br>
-            <button> Submit </button>
-            <br>
-            <br>
+        <script>
+            function checkPalindrome() {
+                var word = document.getElementById('wordInput').value;
+                var cleanedWord = word.replace(/[\s+.,\/#!$%\^&\*;:{}=\-_`~()]/g, "").toLowerCase();
+                var reversedWord = cleanedWord.split('').reverse().join('');
 
-        </form>
-        
-        <!-- the footer section; this should show up at the bottom of the page-->
-        <footer>
-            Melanie Owens
-            <br>
-            University of Advancing Technology
-            <br>
-            2625 W Baseline Rd
-            <br>
-            Tempe, AZ 85283
-            <br>
-            Butters: "I don't play World of Warcraft"..."I'm playing Hello Kitty Island Adventure"
-        </footer>
+                if (cleanedWord === reversedWord) {
+                    document.getElementById('result').innerText = '"' + word + '" is a palindrome!';
+                } else {
+                    document.getElementById('result').innerText = '"' + word + '" is not a palindrome.';
+                }
+            }
+        </script>
     </body>
 </html>

@@ -1,0 +1,70 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: grey;
+    color: black;
+}
+
+/* Header Styles */
+header {
+    background-color: pink;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: pink; /* Making the header title pink */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: black;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: pink;
+}
+
+/* Content Styles */
+.content {
+    background-color: white;
+    padding: 20px;
+    margin-left: 200px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid pink;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+/* Footer Styles */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
