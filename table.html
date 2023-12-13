@@ -11,64 +11,79 @@
         <!-- tag used so that the website can look good both on mobile and desktop -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- this text will appear in the browser tab -->
-        <title>Da Goated WebPage</title>
-
+        <title>Da Goated Table</title>
+        <link rel="stylesheet" href="table.css">
 
     </head>
     <!-- all of the page content will go here -->
     <body>
         <!-- adding the page heading/page heading. only 1 h1 per page-->
         <header>
-            <h1> Welcome to my Strings Page! </h1>
+            <h1> Dinner is Served </h1>
         </header>
         
 
         <!-- This is our navigation section-->
         <nav>
             <!-- link to home page-->
-            <!-- the .. will take you "up" a directory to where this file is located -->
-            <a href="index.html"> Home</a> 
+            <a href="index.html"> Home</a>
             <br>
             <!-- link to boards page-->
-            <a href="boards.html"> Boards</a> 
+            <a href="boards.html"> Boards</a>
             <br>
             <!-- link to game page-->
-            <a href="game.html"> Game Page</a>  
+            <a href="game.html"> Game Page</a>
             <br>
-            <!-- link to strings page-->
             <a href="strings.html"> Strings Page</a>
             <br>
-            <!-- link to table page-->
             <a href="table.html"> Dinner Table </a>
             <br>
-            <!-- link to palindrone checker page-->
             <a href="palindroneChecker.html"> Racecar! </a>
-            <br>
             <br>
         </nav>
 
+        <h2>City Information Table</h2>
 
+<table>
+    <tr>
+        <th>City</th>
+        <th>Country</th>
+        <th>Population</th>
+    </tr>
+    <tr>
+        <td>New York</td>
+        <td>USA</td>
+        <td>8.4 million</td>
+    </tr>
+    <tr>
+        <td>Tokyo</td>
+        <td>Japan</td>
+        <td>37.4 million</td>
+    </tr>
+    <tr>
+        <td>London</td>
+        <td>UK</td>
+        <td>8.9 million</td>
+    </tr>
+    <tr>
+        <td>Paris</td>
+        <td>France</td>
+        <td>2.1 million</td>
+    </tr>
+</table>
         
-        <form id="myForm">
-            <!-- name of the first textbox-->
-            <label for="fName"> First Name: </label>
-            <!-- The type of input that will be going into the textbox-->
-            <input type="text" name="fName" id="fName">
-            <br>
-            <br>
-            <label for="lName"> Last Name: </label>
-            <input type="text" name="lName" id="lName">
-            <br>
-            <br>
-            <label for="zip"> Zip Code: </label>
-            <input type="text" name="zip" id="zip">
-            <br>
-            <br>
-            <button> Submit </button>
-            <br>
-            <br>
+        <!-- paragraph tag will hold the meme -->
+            <p id="memeImage">
+                <center> 
+                    <!-- Shows the meme image -->
+                    <img id="homepageMeme" src="elgato.jpeg" alt="Message with cat holding up peace sign and being sassy">
+                </center>
+        </p>
 
-        </form>
+        <audio id="backgroundAudio" controls src="helloKitty.mp3"></audio>
+       
+        <!-- <input type="button" value="New Element Demo" onclick="addButton();"> -->
+        <input type="button" value="Add Start and Stop Buttons" onclick="addButtons();">
         
         <!-- the footer section; this should show up at the bottom of the page-->
         <footer>
